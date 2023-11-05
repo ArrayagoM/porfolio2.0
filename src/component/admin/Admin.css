@@ -1,0 +1,31 @@
+.admin-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 85%);
+    padding: 20px;
+    min-height: 100vh;
+    color: #fff;
+    display: flex; /* Activa el uso de flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+  
+  .vertical-line {
+    width: 2px; /* Ancho de la línea vertical */
+    height: 100%; /* Altura completa del contenedor */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 85%);
+    margin: 0 20px; /* Espacio entre los componentes y la línea */
+  }
+  /* Divide los formularios en columnas */
+.mb-4 {
+    display: inline-block;
+    width: 48%; /* Puedes ajustar este valor según tus preferencias */
+    vertical-align: top;
+    margin-right: 2%; /* Espacio entre las columnas */
+  }
+  /* Elimina el margen derecho del último formulario */
+.mb-4:last-child {
+    margin-right: 0;
+  }
+  /* Admin.css */
+
+
+  

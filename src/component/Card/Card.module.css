@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    
+    align-items: center;
+    margin: 12px;
+    border-radius: 12px;
+    padding: 2px;
+    transition: 0.5s;
+    
+}
+
+
+.img{
+    width: 380px;
+    border-radius: 12px;
+
+}

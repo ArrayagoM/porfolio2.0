@@ -1,0 +1,46 @@
+.icon {
+    position: relative;
+  }
+  
+  .icon a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .icon a:hover {
+    transform: scale(1.1);
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #007ACC, #00D4E0);
+    border-image-slice: 1;
+    border-image-width: 3px;
+  }
+
+  .icon-link {
+    text-decoration: none;
+    color: #333; /* Color base del ícono */
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .icon-shake {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  
+  .icon-fade-out {
+    animation: fade-out 0.5s;
+    color: transparent;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-3px, 3px); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(3px, -3px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  @keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  
