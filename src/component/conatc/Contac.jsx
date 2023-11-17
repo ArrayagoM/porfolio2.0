@@ -59,7 +59,7 @@ const Contact = () => {
 
           <Box>
             <a
-              href="https://api.whatsapp.com/send?phone=+5492241563807"
+              href="https://wa.me/542241563807&text=Hello!"
               target="_blank"
               onClick={handleIconClick}
               className="icon-link"
