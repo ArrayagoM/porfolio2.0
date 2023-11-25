@@ -56,7 +56,7 @@ const Footer = () => {
 
           <Box>
             <a
-              href="https://api.whatsapp.com/send?phone=+5492241563807"
+              href="https://api.whatsapp.com/send/?phone=542241563807&text=Hello&type=phone_number&app_absent=0"
               target="_blank"
               onClick={handleIconClick}
               className="icon-link"
