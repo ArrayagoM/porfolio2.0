@@ -1,27 +1,24 @@
-import React from "react";
-import { HStack, Box } from "@chakra-ui/react";
+import React from 'react';
+import { HStack, Box } from '@chakra-ui/react';
 import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
-const Contact = () => {
+const Footer = () => {
   const handleIconClick = (event) => {
     const icon = event.currentTarget;
+    icon.classList.add('icon-shake');
 
-    // Aplicar efectos de temblor
-    icon.classList.add("icon-shake");
-
-    // Desvanecer el icono
     setTimeout(() => {
-      icon.classList.add("icon-fade-out");
+      icon.classList.add('icon-fade-out');
 
-      // Restablecer los efectos después de un tiempo
       setTimeout(() => {
-        icon.classList.remove("icon-shake", "icon-fade-out");
+        icon.classList.remove('icon-shake', 'icon-fade-out');
       }, 1000);
     }, 1000);
   };
 
   return (
-    <div style={spacerStyle}> {/* Contenedor de espacio vertical */}
+    <div style={spacerStyle}>
+      {' '}
       <footer style={footerStyle}>
         <HStack spacing={8} align="center" justify="center" marginBottom="20px">
           <Box>
@@ -74,18 +71,18 @@ const Contact = () => {
 };
 
 const spacerStyle = {
-  height: "20px", // Espacio vertical de 20px
+  height: '20px',
 };
 
 const footerStyle = {
-  position: "fixed",
+  position: 'fixed',
   bottom: 0,
   left: 0,
-  width: "100%",
-  backgroundColor: "#333",
-  color: "#fff",
-  padding: "10px",
-  textAlign: "center",
+  width: '100%',
+  backgroundColor: '#333',
+  color: '#fff',
+  padding: '10px',
+  textAlign: 'center',
 };
 
-export default Contact;
+export default Footer;

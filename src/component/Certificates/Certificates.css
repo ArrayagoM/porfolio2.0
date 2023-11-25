@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  color: teal;
+  margin-bottom: 10px; /* Agregado un margen inferior para separar el título del resto de los elementos */
+}
+
+.element {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no hay suficiente espacio */
+  gap: 20px; /* Espaciado entre las imágenes */
+  justify-content: center;
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+.img {
+  max-width: 100%; /* Ahora las imágenes se ajustarán al ancho del contenedor padre */
+  width: 300px; /* Establece un ancho máximo para las imágenes */
+  transition: 0.3s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+}
